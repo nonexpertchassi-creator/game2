@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="game2 프로젝트 상태 대시보드 — 기획 원본은 Markdown 문서이며, 이 페이지는 조회용이다.">
+  <title>game2 — Project Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Ctext x='8' y='12' font-size='10' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3Eg%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-title">
+        <h1>game2</h1>
+        <span class="chip chip-phase" id="phase-chip">Pre-production</span>
+      </div>
+      <a id="repo-link" class="repo-link" href="https://github.com/nonexpertchassi-creator/game2" target="_blank" rel="noopener">
+        GitHub 저장소 ↗
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="error-banner" class="error-banner" role="alert" hidden></div>
+
+    <!-- 4.6 다음 행동 (가장 눈에 띄는 영역) -->
+    <section class="next-action" aria-labelledby="next-action-label">
+      <p class="section-eyebrow" id="next-action-label">다음 행동</p>
+      <p class="next-action-text" id="next-action-text">불러오는 중…</p>
+    </section>
+
+    <!-- 4.1 프로젝트 요약 -->
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">프로젝트 요약</h2>
+      <div class="tile-grid" id="summary-tiles">
+        <div class="tile">
+          <p class="tile-label">현재 단계</p>
+          <p class="tile-value" id="summary-phase">—</p>
+        </div>
+        <div class="tile">
+          <p class="tile-label">현재 목표</p>
+          <p class="tile-value tile-value-sm" id="summary-milestone">—</p>
+        </div>
+        <div class="tile">
+          <p class="tile-label">현재 집중 작업</p>
+          <p class="tile-value tile-value-sm" id="summary-focus">—</p>
+        </div>
+        <div class="tile">
+          <p class="tile-label">전체 진행률</p>
+          <p class="tile-value" id="summary-progress">—</p>
+          <div class="meter" role="img" id="summary-meter-wrap" aria-label="전체 진행률">
+            <div class="meter-fill" id="summary-meter" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="tile">
+          <p class="tile-label">마지막 업데이트</p>
+          <p class="tile-value" id="summary-updated">—</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.2 현재 마일스톤 -->
+    <section aria-labelledby="milestone-heading">
+      <h2 id="milestone-heading">현재 마일스톤</h2>
+      <div id="milestone-list"></div>
+    </section>
+
+    <!-- 4.3 작업 보드 -->
+    <section aria-labelledby="board-heading">
+      <h2 id="board-heading">작업 보드</h2>
+      <div class="board" id="task-board"></div>
+    </section>
+
+    <!-- 4.4 설계 상태 (기획 원본 기준의 정적 요약) -->
+    <section aria-labelledby="design-heading">
+      <h2 id="design-heading">설계 상태</h2>
+      <div class="design-grid">
+        <div class="design-col design-decision">
+          <h3><span class="dot dot-decision" aria-hidden="true"></span>Decision</h3>
+          <ul>
+            <li>Decision-001 — 초기 조작과 카메라 방향</li>
+          </ul>
+        </div>
+        <div class="design-col design-hypothesis">
+          <h3><span class="dot dot-hypothesis" aria-hidden="true"></span>Hypothesis</h3>
+          <ul>
+            <li>정화는 독립 행동이 아니라 플레이어의 행동으로 발생하는 지역 변화</li>
+            <li>전투는 목적이 아니라 사건 해결 과정의 수단</li>
+            <li>지역은 재사용 가능한 플레이 경험 블록으로 설계</li>
+            <li>플레이어는 다음 지역의 변화를 궁금해하며 진행</li>
+            <li>영물은 지역 정화 이후 다음 지역과 새로운 가능성을 암시</li>
+          </ul>
+        </div>
+        <div class="design-col design-discussion">
+          <h3><span class="dot dot-discussion" aria-hidden="true"></span>Discussion</h3>
+          <ul>
+            <li>주인공이 사건에 개입하는 첫 번째 명분</li>
+            <li>도사와 무당의 역할 구분</li>
+            <li>오행과 무기의 연결 방식</li>
+            <li>스킬 습득 방식</li>
+            <li>영물이 제공하는 보상의 형태</li>
+          </ul>
+        </div>
+      </div>
+      <p class="design-note">Hypothesis와 Discussion은 확정이 아니다. 확정 사항은 Decision 문서에만 기록된다.</p>
+    </section>
+
+    <!-- 4.5 최근 문서 -->
+    <section aria-labelledby="docs-heading">
+      <h2 id="docs-heading">최근 문서</h2>
+      <div class="table-scroll">
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th scope="col">문서명</th>
+              <th scope="col">경로</th>
+              <th scope="col">상태</th>
+              <th scope="col">마지막 수정일</th>
+              <th scope="col">링크</th>
+            </tr>
+          </thead>
+          <tbody id="doc-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>기획 원본은 저장소의 Markdown 문서이며, 이 대시보드는 상태 조회용이다. 편집 기능은 제공하지 않는다.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
