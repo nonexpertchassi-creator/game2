@@ -1,0 +1,114 @@
+[
+  {
+    "id": "T-001",
+    "title": "귀신의 숲 기획 v0.1 정리",
+    "status": "doing",
+    "category": "기획",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-002",
+    "title": "주인공의 첫 번째 명분 정의",
+    "status": "todo",
+    "category": "기획",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-003",
+    "title": "Player Actions 정리",
+    "status": "todo",
+    "category": "기획",
+    "relatedDocument": "02_Gameplay/PlayerActions.md",
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-004",
+    "title": "Core Loop v0.1 문서화",
+    "status": "todo",
+    "category": "기획",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-005",
+    "title": "귀신의 숲 사건 흐름 문서화",
+    "status": "todo",
+    "category": "기획",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-006",
+    "title": "귀신의 숲 감정 곡선 문서화",
+    "status": "todo",
+    "category": "기획",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-007",
+    "title": "오행 상세 시스템",
+    "status": "backlog",
+    "category": "시스템",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-008",
+    "title": "무기 상세 시스템",
+    "status": "backlog",
+    "category": "시스템",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-009",
+    "title": "숙련도 시스템",
+    "status": "backlog",
+    "category": "시스템",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-010",
+    "title": "일반 몬스터 설계",
+    "status": "backlog",
+    "category": "시스템",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-011",
+    "title": "Unity 프로젝트 생성",
+    "status": "backlog",
+    "category": "프로토타입",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-012",
+    "title": "WASD 이동 프로토타입",
+    "status": "backlog",
+    "category": "프로토타입",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-013",
+    "title": "카메라 팔로우 프로토타입",
+    "status": "backlog",
+    "category": "프로토타입",
+    "relatedDocument": null,
+    "updatedAt": "2026-07-14"
+  },
+  {
+    "id": "T-014",
+    "title": "초기 조작 및 카메라 방향 Decision-001",
+    "status": "done",
+    "category": "기획",
+    "relatedDocument": "01_Decisions/Decision-001.md",
+    "updatedAt": "2026-07-14"
+  }
+]

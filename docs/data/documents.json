@@ -1,0 +1,58 @@
+[
+  {
+    "title": "DayLog-002",
+    "path": "04_Logs/DayLog-002.md",
+    "status": "Session Log",
+    "updatedAt": "2026-07-08",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/04_Logs/DayLog-002.md"
+  },
+  {
+    "title": "Game Philosophy",
+    "path": "GamePhilosophy.md",
+    "status": "Hypothesis v0.1",
+    "updatedAt": "2026-07-08",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/GamePhilosophy.md"
+  },
+  {
+    "title": "Player Actions",
+    "path": "02_Gameplay/PlayerActions.md",
+    "status": "Hypothesis v0.1",
+    "updatedAt": "2026-07-08",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/02_Gameplay/PlayerActions.md"
+  },
+  {
+    "title": "Learning Flow",
+    "path": "02_Gameplay/LearningFlow.md",
+    "status": "Hypothesis v0.1",
+    "updatedAt": "2026-07-08",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/02_Gameplay/LearningFlow.md"
+  },
+  {
+    "title": "Decision-001 — 초기 조작과 카메라 방향",
+    "path": "01_Decisions/Decision-001.md",
+    "status": "Decision · 확정",
+    "updatedAt": "2026-07-07",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/01_Decisions/Decision-001.md"
+  },
+  {
+    "title": "Controls",
+    "path": "02_Gameplay/Controls.md",
+    "status": "방향 확정 · 세부 후보",
+    "updatedAt": "2026-07-07",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/02_Gameplay/Controls.md"
+  },
+  {
+    "title": "Camera",
+    "path": "02_Gameplay/Camera.md",
+    "status": "방향 확정 · 세부 보류",
+    "updatedAt": "2026-07-07",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/02_Gameplay/Camera.md"
+  },
+  {
+    "title": "README",
+    "path": "README.md",
+    "status": "개요",
+    "updatedAt": "2026-07-07",
+    "githubUrl": "https://github.com/nonexpertchassi-creator/game2/blob/main/README.md"
+  }
+]
